@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <style>
+    body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+  </style>
+  <button onclick="myFunction()">Darkmode</button>
+  <script>
+    if (localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('dark-mode');
+    }
+    function myFunction() {
+      document.body.classList.toggle('dark-mode');
+      localStorage.setItem('theme', 
+      document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+    }
+  </script>
+</head>
+
+<body class="w3-light-grey">
+
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32"> 
+  <h1><b>MY BLOG</b></h1>
+  <p>Welcome to the blog of <span class="w3-tag">Ainur Duisim</span></p>
+</header>
+
+<!-- Grid -->
+<div class="w3-row">
+
+<!-- Blog entries -->
+<div class="w3-col l8 s12">
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="images/17108567850f61n_1000x768.jpg" alt="Nazarbayev University" style="width:100%">
+    <div class="w3-container">
+      <h3><b>My Profession</b></h3>
+      <h5>School of Sciences and Humanities, <span class="w3-opacity">February 22, 2025</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>I am Undeclared student at  Nazarbayev University. I will declare the major World Languages, Literatures and Cultures. I will study foreign languages and cultures, and comparative literature.</p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p>
+            <a href="profession.html" class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></a>
+          </p>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+  <img src="images/study.jpg" alt="Study" style="width:100%">
+    <div class="w3-container">
+      <h3><b>University life</b></h3>
+      <h5> <span class="w3-opacity">February 23, 2024</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>I study a lot and I am member of NU Chinese club. I am ex-member of Vox Philosophy and Beine club.</p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- END BLOG ENTRIES -->
+</div>
+
+<!-- Introduction menu -->
+<div class="w3-col l4">
+  <!-- About Card -->
+  <div class="w3-card w3-margin w3-margin-top">
+  <img src="images/2024.jpg" style="width: 100%">
+    <div class="w3-container w3-white">
+      <h4><b>Ainur</b></h4>
+      <p>I am 18 years old and I am first-year student at Nazarbayev University. I love reading, cooking, crocheting, watching movies.</p>
+    </div>
+  </div><hr>
+  
+  <!-- Posts -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Popular Posts</h4>
+    </div>
+    <ul class="w3-ul w3-hoverable w3-white">
+      <li class="w3-padding-16">
+        <img src="images/interests.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">
+          <a href="interests.html">Interests</a> <!-- i added link myself -->
+        </span><br>
+        <span>My interests</span>
+      </li>
+      <li class="w3-padding-16">
+        <img src="images/images.jpeg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">
+          <a href="hobbies.html">Hobbies</a> <!-- i added link myself-->
+        </span><br>
+        <span>My favourite things to do</span>
+      </li> 
+      <li class="w3-padding-16">
+        <img src="images/skin.webp" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">
+          <a href="skincare.html">Skincare</a> <!-- i added link myself -->
+        </span><br>
+        <span>My skincare routine</span>
+      </li>   
+      <li class="w3-padding-16">
+        <img src="images/films.jpeg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">
+          <a href="movies.html">Movies</a> <!-- i added link myself -->
+        </span><br>
+        <span>My watched movies</span>
+      </li> 
+      <li class="w3-padding-16">
+        <img src="images/resources.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">
+          <a href="resources.html">Resources</a> <!-- i added link myself -->
+        </span><br>
+        <span>Resources I recommend</span>
+      </li> 
+    </ul>
+  </div>
+  <hr> 
+ 
+  <!-- Labels / tags -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Tags</h4>
+    </div>
+    <div class="w3-container w3-white">
+    <p><span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">DIY</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Family</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Games</span>
+    </p>
+    </div>
+  </div>
+  
+<!-- END Introduction Menu -->
+</div>
+
+<!-- END GRID -->
+</div><br>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+  <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
+  <button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</button>
+    <p>© 2025 My Blog | Created by Ainur Duisim</p>
+</footer>
+
+</body>
+</html>

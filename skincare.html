@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skincare</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profession.html">Profession</a></li>
+            <li><a href="interests.html">Interests</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+            <li><a href="skincare.html">Skincare</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <button onclick="myFunction()">Darkmode</button>
+        </ul>
+    </nav>
+
+    <div>
+        <header>
+            <h1>My Skincare Routine</h1>
+        </header>
+
+        <p> Skin needs cleansing, moisturizing and protection from sun.
+            <br>Here are my top 5 skincare products:
+        </p>
+    </div>
+    <hr>
+
+    <section class="products">
+        <figure>
+            <img src="images/cleanser.jpeg" alt="Cleanser">
+            <figcaption>Gentle Cleanser</figcaption>
+        </figure>
+        <figure>
+            <img src="images/ampoule.jpeg" alt="Toner">
+            <figcaption>Toner Pads</figcaption>
+        </figure>
+        <figure>
+            <img src="images/serum.jpeg" alt="Serum">
+            <figcaption>Serum</figcaption>
+        </figure>
+        <figure>
+            <img src="images/cream.jpeg" alt="Moisturizer">
+            <figcaption>Lightweight Moisturizer</figcaption>
+        </figure>
+        <figure>
+            <img src="images/suncream.jpeg" alt="Sunscreen">
+            <figcaption>SPF 50 Sunscreen</figcaption>
+        </figure>
+    </section>
+
+    <div>
+    <h3>Share Your Skincare Tips</h3>
+            <form>
+                <label for="tip">Your best skincare tip:</label>
+                <input type="text" id="tip" name="tip" placeholder="Write your tip here..." required>
+                <button type="submit">Submit</button>
+            </form>
+    <footer class="footer">
+        <p>© 2025 My Blog | Created by Ainur Duisim</p>
+    </footer>
+    </div>
+</body>
+
+<script>
+    if (localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('dark-mode');
+    }
+    function myFunction() {
+      document.body.classList.toggle('dark-mode');
+      localStorage.setItem('theme', 
+      document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+    }
+</script>
+</html>
